@@ -1,0 +1,68 @@
+{
+  "contract_name": "Agreement",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "validator",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "shipment",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_shipment",
+          "type": "address"
+        },
+        {
+          "name": "_validator",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b60405160408061012d8339810160405280516020909101515b60008054600160a060020a03808516600160a060020a03199283161790925560018054928416929091169190911790555b50505b60c6806100676000396000f300606060405263ffffffff60e060020a6000350416633a5381b58114602a5780637bf86ad6146053575bfe5b3415603157fe5b6037607c565b60408051600160a060020a039092168252519081900360200190f35b3415605a57fe5b6037608b565b60408051600160a060020a039092168252519081900360200190f35b600154600160a060020a031681565b600054600160a060020a0316815600a165627a7a7230582059588f0ebdd737a1b6179304a50bb113aae840bfdabd17a6a0b73d258a2793910029",
+  "networks": {
+    "1500785432071": {
+      "events": {},
+      "links": {},
+      "address": "0x543e0152ddd0d681f234d67f21c0911e69ac15d4",
+      "updated_at": 1500785477253
+    },
+    "1500823964310": {
+      "events": {},
+      "links": {},
+      "address": "0x4c9aff86447509519664b4a44323086b17aa023d",
+      "updated_at": 1500823981015
+    },
+    "1500827582710": {
+      "events": {},
+      "links": {},
+      "address": "0x3655ae076b3272fffdb6aabadb0d146c38249d9f",
+      "updated_at": 1500827670267
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500831193154
+}

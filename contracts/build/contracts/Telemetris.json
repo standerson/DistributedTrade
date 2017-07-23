@@ -1,0 +1,121 @@
+{
+  "contract_name": "Telemetris",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "agreement",
+          "type": "address"
+        }
+      ],
+      "name": "addAgreement",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "agreementCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "agreements",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "i",
+          "type": "uint256"
+        }
+      ],
+      "name": "agreementAt",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b5b60008054600160a060020a03191633600160a060020a03161790555b5b5b6102e98061003b6000396000f3006060604052361561005c5763ffffffff60e060020a60003504166309fa423e811461005e5780638da5cb5b1461007c578063bb7bb278146100a8578063bd14de96146100ca578063ccab94e7146100f9578063f2fde38b14610128575bfe5b341561006657fe5b61007a600160a060020a0360043516610146565b005b341561008457fe5b61008c6101a5565b60408051600160a060020a039092168252519081900360200190f35b34156100b057fe5b6100b86101b4565b60408051918252519081900360200190f35b34156100d257fe5b61008c6004356101bb565b60408051600160a060020a039092168252519081900360200190f35b341561010157fe5b61008c6004356101ed565b60408051600160a060020a039092168252519081900360200190f35b341561013057fe5b61007a600160a060020a0360043516610226565b005b60005433600160a060020a039081169116146101625760006000fd5b600180548082016101738382610272565b916000526020600020900160005b8154600160a060020a038086166101009390930a92830292021916179055505b5b50565b600054600160a060020a031681565b6001545b90565b60018054829081106101c957fe5b906000526020600020900160005b915054906101000a9004600160a060020a031681565b60006001828154811015156101fe57fe5b906000526020600020900160005b9054906101000a9004600160a060020a031690505b919050565b60005433600160a060020a039081169116146102425760006000fd5b600160a060020a038116156101a15760008054600160a060020a031916600160a060020a0383161790555b5b5b50565b8154818355818115116102965760008381526020902061029691810190830161029c565b5b505050565b6101b891905b808211156102b657600081556001016102a2565b5090565b905600a165627a7a7230582033f641a1d8884520fb2ff712a65f2ab2980d19d568eedd863cd4a6ff8c26f1e90029",
+  "networks": {
+    "1500785432071": {
+      "events": {},
+      "links": {},
+      "address": "0x0214528b0aba6ed7e61d22b2ee0d84516ddab755",
+      "updated_at": 1500785477253
+    },
+    "1500823964310": {
+      "events": {},
+      "links": {},
+      "address": "0xba812fd8a0a8187b7b00e1984b5d295a932dc555",
+      "updated_at": 1500823981015
+    },
+    "1500827582710": {
+      "events": {},
+      "links": {},
+      "address": "0x65f9beb5ced5aee6931d7a71df074d6c57112799",
+      "updated_at": 1500827670267
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500831193154
+}

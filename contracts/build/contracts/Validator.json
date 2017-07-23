@@ -1,0 +1,55 @@
+{
+  "contract_name": "Validator",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_telemetry",
+          "type": "address"
+        },
+        {
+          "name": "_requirements",
+          "type": "address"
+        }
+      ],
+      "name": "validate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600b57fe5b5b5b5b60888061001c6000396000f300606060405263ffffffff60e060020a600035041663221e2efc81146020575bfe5b3415602757fe5b603f600160a060020a03600435811690602435166053565b604080519115158252519081900360200190f35b60015b929150505600a165627a7a72305820f350c47aae30dd8f62b733b7e0ff4b613dee7ee6030b8098c1f5383be17c29dd0029",
+  "networks": {
+    "1500785432071": {
+      "events": {},
+      "links": {},
+      "address": "0x58191e44ee338a8fb8bfa64405046b30de7017af",
+      "updated_at": 1500785477258
+    },
+    "1500823964310": {
+      "events": {},
+      "links": {},
+      "address": "0xcd9adae029ec954d60b98bab99bfc46203f524a2",
+      "updated_at": 1500823981020
+    },
+    "1500827582710": {
+      "events": {},
+      "links": {},
+      "address": "0xd9870f169282ab4587d86a3b99e04adb9a030636",
+      "updated_at": 1500827670272
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500831193154
+}

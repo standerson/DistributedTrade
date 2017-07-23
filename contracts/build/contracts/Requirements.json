@@ -1,0 +1,75 @@
+{
+  "contract_name": "Requirements",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "humidity",
+      "outputs": [
+        {
+          "name": "decimals",
+          "type": "uint256"
+        },
+        {
+          "name": "min",
+          "type": "int256"
+        },
+        {
+          "name": "max",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "temperature",
+      "outputs": [
+        {
+          "name": "decimals",
+          "type": "uint256"
+        },
+        {
+          "name": "min",
+          "type": "int256"
+        },
+        {
+          "name": "max",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b5b5b60c48061001d6000396000f300606060405263ffffffff60e060020a600035041663a113efa38114602a578063adccea12146055575bfe5b3415603157fe5b60376080565b60408051938452602084019290925282820152519081900360600190f35b3415605c57fe5b6037608c565b60408051938452602084019290925282820152519081900360600190f35b60035460045460055483565b600054600154600254835600a165627a7a723058205772215c60aa87622c4a461e8d9a1aba06e4317c1126fd7772fc534741bf57760029",
+  "networks": {
+    "1500785432071": {
+      "events": {},
+      "links": {},
+      "address": "0xd045ae4eff6568b8f995fa15abd80fd5a0f836a0",
+      "updated_at": 1500785477253
+    },
+    "1500823964310": {
+      "events": {},
+      "links": {},
+      "address": "0x5e8173f70550d207922766a4f9d849c2e5b6c863",
+      "updated_at": 1500823981015
+    },
+    "1500827582710": {
+      "events": {},
+      "links": {},
+      "address": "0xebc3043cf35dd4444c489930dcf386890d5b0c35",
+      "updated_at": 1500827670268
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500831193154
+}

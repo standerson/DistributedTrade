@@ -1,0 +1,39 @@
+{
+    "name": "contracts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "DEBUG=telemetris:* node ./bin/contracts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/devpost-2017/contracts.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/devpost-2017/contracts/issues"
+    },
+    "homepage": "https://gitlab.com/devpost-2017/contracts#README",
+    "dependencies": {
+        "async": "^2.5.0",
+        "bignumber.js": "^4.0.2",
+        "bluebird": "^3.5.0",
+        "body-parser": "^1.17.2",
+        "debug": "^2.6.8",
+        "ethereumjs-lib": "^3.0.0",
+        "express": "^4.15.3",
+        "ipfs-api": "^14.0.4",
+        "lodash": "^4.17.4",
+        "multi-hash": "^0.1.1",
+        "nconf": "^0.8.4",
+        "truffle-contract": "^2.0.2",
+        "web3": "^0.19.1"
+    },
+    "devDependencies": {
+        "mocha": "^3.4.2",
+        "should": "^11.2.1",
+        "truffle": "^3.4.5"
+    }
+}

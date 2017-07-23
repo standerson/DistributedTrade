@@ -1,0 +1,135 @@
+{
+  "contract_name": "Telemetry",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_tempInCelsius",
+          "type": "int256"
+        },
+        {
+          "name": "_humidity",
+          "type": "uint256"
+        },
+        {
+          "name": "_lumens",
+          "type": "uint256"
+        }
+      ],
+      "name": "addMeasurements",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "tempInCelsius",
+          "type": "int256"
+        },
+        {
+          "indexed": false,
+          "name": "humidity",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "lumens",
+          "type": "uint256"
+        }
+      ],
+      "name": "measurementAdded",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b5b5b6101748061001e6000396000f300606060405263ffffffff60e060020a600035041663502146808114610021575bfe5b341561002957fe5b61003a60043560243560443561003c565b005b600080546001810161004e83826100e1565b916000526020600020906004020160005b506040805160808101825286815260208082018790528183018690524260609283018190528885556001850188905560028501879055600390940193909355815187815292830186905282820185905290517fc11fbc20fec80c9951f3989afbe7dbdc15a2916c1da33760fe9e410ecd97699b9350918290030190a15b505050565b8154818355818115116100dc576004028160040283600052602060002091820191016100dc9190610113565b5b505050565b61014591905b8082111561014157600080825560018201819055600282018190556003820155600401610119565b5090565b905600a165627a7a72305820ae72b98269eccb8df7bb5140e2c0423780a1712f13fff50312c5fd46a9d324030029",
+  "networks": {
+    "1500785432071": {
+      "events": {
+        "0xf25d00bdce24524fb6120d8cff91660a573e06dbfd782adfd223ba74554de27e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_tempInCelsius",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_humidity",
+              "type": "uint256"
+            }
+          ],
+          "name": "measurementAdded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x955bcfe88736818a62e5cbe22eacaecb9dab8321",
+      "updated_at": 1500785477253
+    },
+    "1500823964310": {
+      "events": {
+        "0xf25d00bdce24524fb6120d8cff91660a573e06dbfd782adfd223ba74554de27e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_tempInCelsius",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_humidity",
+              "type": "uint256"
+            }
+          ],
+          "name": "measurementAdded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x7908bc87a4115aa5946f4ae0538c60b788a183af",
+      "updated_at": 1500823981018
+    },
+    "1500827582710": {
+      "events": {
+        "0xc11fbc20fec80c9951f3989afbe7dbdc15a2916c1da33760fe9e410ecd97699b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "tempInCelsius",
+              "type": "int256"
+            },
+            {
+              "indexed": false,
+              "name": "humidity",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "lumens",
+              "type": "uint256"
+            }
+          ],
+          "name": "measurementAdded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x3e73b44337509f0a94cfb2e7dcf3cea096eaef16",
+      "updated_at": 1500827670268
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500831193154
+}

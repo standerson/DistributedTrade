@@ -1,0 +1,73 @@
+#!/usr/bin/env node
+let debug = require("debug")("telemetris:contracts"),
+    http  = require("http"),
+    util  = require("util");
+
+let config = require("../config"),
+    server = require("../server/index"),
+    pjson  = require("../package.json");
+
+let host = config.get("host");
+let port = config.get("port");
+
+let app = http.createServer(server);
+app.listen(port, host, async () => {
+    await setupDefaultData();
+
+    process.title = pjson.name + " " + pjson.version;
+    process.title = util.format("%s %s listening on %s:%s", pjson.name, pjson.version, host, port);
+    debug("telemetris service started on %s:%s", host, port);
+});
+
+/**
+ * Start http server and attach signal handlers.
+ */
+let stop = function(msg) {
+    process.exit();
+};
+
+process.on("uncaughtException", function(err) {
+    debug(err.stack);
+    debug("uncaughtException", err);
+}).on("SIGINT", function() {
+    stop("Received SIGINT Ctrl+C signal. Licensing service shutdown.");
+}).on("SIGTERM", function() {
+    stop("Received SIGTERM signal. Licensing service shutdown.");
+}).on("exit", function() {
+    stop("Licensing service shutdown.");
+});
+
+
+/**
+ * Seed data for testing
+ * @returns {Promise.<void>}
+ */
+async function setupDefaultData() {
+    let telemetry1    = await config.contracts.Telemetry.new();
+    let requirements1 = await config.contracts.Requirements.new();
+    let asset1        = await config.contracts.Asset.new("244e19e4", "Roxanol", 200, 14500, telemetry1.address, requirements1.address);
+
+    let telemetry2    = await config.contracts.Telemetry.new();
+    let requirements2 = await config.contracts.Requirements.new();
+    let asset2        = await config.contracts.Asset.new("ebbdf163", "Oxycodone", 123, 89500, telemetry2.address, requirements2.address);
+
+    let buyer    = config.web3.eth.accounts[1];
+    let seller   = config.web3.eth.accounts[2];
+    let shipment = await config.contracts.Shipment.new(buyer, seller);
+    await shipment.addAsset(asset1.address);
+    await shipment.addAsset(asset2.address);
+
+    // Chicago to New York
+    await shipment.setOrigin(41.897930, -87.622893);
+    await shipment.setDestination(40.712743, -74.013379);
+
+    let validator = await config.contracts.Validator.new();
+    let agreement = await config.contracts.Agreement.new(shipment.address, validator.address);
+
+    let telemetris = await config.contracts.Telemetris.new();
+    await telemetris.addAgreement(agreement.address);
+
+    config.contracts.systemAddress = telemetris.address;
+
+    debug("setup seed data");
+}
